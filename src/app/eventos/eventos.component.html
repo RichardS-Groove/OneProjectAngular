@@ -1,1 +1,9 @@
-<button (click)="onClick()">Pulsa!!</button>
+<button (click)="onClick($event)">Pulsa!!</button>
+
+<br>
+
+<select (change)="onChange($event)">
+    <option value="uno">Uno</option>
+    <option value="dos">Dos</option>
+    <option value="tres">Tres</option>
+</select>

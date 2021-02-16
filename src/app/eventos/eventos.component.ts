@@ -15,8 +15,13 @@ export class EventosComponent implements OnInit {
   ngOnInit(): void {}
 
 
-  onClick () {
+  onClick(event:any) {
     console.log('Se ha pulsado el botón');
+    console.log(event);
+  }
+
+  onChange(event:any) {
+    console.log(event.target.value);
   }
 
 }
